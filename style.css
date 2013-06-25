@@ -6,3 +6,34 @@
 .header h1 {
     font-size: 60px;
 }
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    font-family: 'trebuchet ms', sans-serif;
+}
+
+.label {
+    font-weight: normal;
+}
+
+.extra-info {
+    position: relative;
+    left: -50px;
+    margin-right: -50px;
+    border: solid 1px #d7cd78;
+    background: #fffbd5 url(img/light_bulb.png) no-repeat;
+    background-position: 0px 3px;
+    width: auto;
+    padding: 5px 5px 5px 30px;
+    min-height: 28px;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.extra-info .content {
+    margin-left: 15px;
+}
