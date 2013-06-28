@@ -1,5 +1,6 @@
 ---
 title: Hoe werkt deze site?
+template: playground
 ---
 
 Op deze site leren we je stap voor stap hoe je ingewikkelde webpagina's in

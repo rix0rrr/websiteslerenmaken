@@ -22,8 +22,6 @@ h1 a {
 
 .extra-info {
     position: relative;
-    left: -50px;
-    margin-right: -50px;
     border: solid 1px #d7cd78;
     background: #fffbd5 url(img/light_bulb.png) no-repeat;
     background-position: 0px 3px;
@@ -36,4 +34,22 @@ h1 a {
 
 .extra-info .content {
     margin-left: 15px;
+}
+
+.vfill {
+    overflow: scroll;
+}
+
+.hsplitter .pane {
+    overflow: scroll;
+}
+
+.hsplitbar {
+	height: 5px;
+	background: #aaa;
+}
+
+.vsplitbar {
+	width: 5px;
+	background: #aaa;
 }
