@@ -19,7 +19,7 @@
                     <div class="span12">
                         <h1><a href="..">Websites Leren Maken</a></h1>
                         <div class="tagline">Een initiatief van <a href="http://www.djoe.nl/">Djoe</a></div>
-                        <a href=".." class="btn btn-primary offset-left">« Terug</a>
+                        <a href=".." class="btn btn-primary offset-left">« Home</a>
                     </div>
                 </div>
             </div>

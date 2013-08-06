@@ -2,15 +2,15 @@
 title: Waarom wil ik dit leren?
 ---
 
-Op deze site leren we je hoe je zelf een website moet _programmeren_, vanuit
-helemaal niets.
+Op deze site leren we je hoe je zelf een website moet _programmeren_, gewapend
+met niets anders dan een computer.
 
 Misschien wil je dat wel helemaal niet, en daar is helemaal niets mis mee!
 Misschien wil jij wel alleen een website hebben voor je voetbalclub, voor je
 hond of voor je favoriete computerspel. Daarvoor hoef je helemaal niet te
 weten hoe een website precies werkt en waar dat allemaal uit bestaat!
 
-## Een website maken, eenvoudig
+## Een website maken hoeft niet moeilijk te zijn
 
 Er zijn genoeg sites waar je heel eenvoudig zelf een website bij elkaar kunt
 klikken en typen, zonder dat je hoeft te weten hoe het onder water allemaal
