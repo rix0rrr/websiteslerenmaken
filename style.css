@@ -1,10 +1,16 @@
 .header {
-    height: 150px;
-    padding-top: 50px;
+    height: 100px;
+    padding-top: 20px;
 }
 
 .header h1 {
     font-size: 60px;
+}
+
+.header .offset-left {
+    position: absolute;
+    left: 10px;
+    top: 40px;
 }
 
 h1 a {
@@ -36,20 +42,48 @@ h1 a {
     margin-left: 15px;
 }
 
-.vfill {
-    overflow: scroll;
+.h-splitter, .v-splitter {
+	background: #ddd;
+    /*
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    */
 }
 
-.hsplitter .pane {
-    overflow: scroll;
+/*
+.v-splitter {
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+}
+*/
+
+.uitleg {
+    margin: 1em;
 }
 
-.hsplitbar {
-	height: 5px;
-	background: #aaa;
+.buttonbar { border-top: solid 1px #ccc; }
+.buttonbar-inner { margin: 5px; }
+
+.editor {
+    overflow: auto !important;
+    width: 100%;
+    height: 100%;
 }
 
-.vsplitbar {
-	width: 5px;
-	background: #aaa;
+.preview-pane {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    top: 0px;
+    bottom: 0px;
 }
+
+.CodeMirror {
+  height: auto;
+}
+.CodeMirror-scroll {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+

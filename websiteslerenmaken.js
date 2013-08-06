@@ -12,14 +12,18 @@ $(function() {
     $(window).resize(resizeVfills);
     resizeVfills();
 
-    $(".vsplitter").splitter({ type: 'v', sizeLeft: 300, cookie: 'lrsplitter' });
-    $(".hsplitter").splitter({ type: 'h', sizeTop: 300, cookie: 'tbsplitter' });
-
     $('.editor').each(function(i, el) {
         var myCodeMirror = CodeMirror(el, {
-            value: "<html>\n  <head>\n  </head>\n  <body>\n  </body>\n</html>\n",
+            value: "<html>\n  <head>\n  </head>\n  <body>\n\n    Wat je hier typt verschijnt in het vak hieronder.\n\n  </body>\n</html>\n",
             mode:  "htmlmixed"
         });
+
+        var update = function() {
+            var html = myCodeMirror.getValue();
+            $('#preview').attr('src', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
+        };
+
+        myCodeMirror.on('change', update);
+        update();
     });
-    
 });

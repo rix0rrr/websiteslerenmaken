@@ -34,4 +34,4 @@ uitleggen hoe je spelletjes kan programmeren!
 Als je toch benieuwd bent geworden naar hoe je een website moet maken, klik
 dan hieronder!
 
-<a href="/page.php/hoe-werkt-deze-site" class="btn btn-success">Begin de uitleg!</a>
+<a href="../page.php/hoe-werkt-deze-site" class="btn btn-success">Begin de uitleg!</a>
