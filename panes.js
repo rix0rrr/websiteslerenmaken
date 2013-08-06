@@ -60,12 +60,16 @@ $(function() {
         var right = $(el).children().eq(1);
         var splitter = $('<div></div>').addClass(horizontal ? 'h-splitter' : 'v-splitter').appendTo(el);
 
+        var max = function() {
+            return horizontal ? $(el).width() : $(el).height();
+        }
+
         var splitSize  = 8;
         var splitMargin = 50;
-        var pos = getPosition(el, horizontal ? $(el).width() / 2 : $(el).height() / 2);
+        var pos = getPosition(el, max() / 2);
 
         function updatePositions() {
-            pos = Math.max(splitMargin, Math.min(pos, $(el).width() - splitMargin));
+            pos = Math.max(splitMargin, Math.min(pos, max() - splitMargin));
 
             left.css({
                 position: 'absolute',
