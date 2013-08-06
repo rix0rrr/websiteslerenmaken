@@ -1,6 +1,8 @@
 ---
 title: Hoe werkt deze site?
 template: playground
+prev: ../page.php/waarom
+next: ../page.php/tags-en-html-bestanden
 ---
 
 Op deze site leren we je stap voor stap hoe je ingewikkelde webpagina's in

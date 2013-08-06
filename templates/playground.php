@@ -41,8 +41,8 @@
         </div>
         <div class="buttonbar" style="width: 100%; position: absolute; height: 50px; bottom: 0px;">
             <div class="buttonbar-inner">
-                <a href="#" class="btn btn-warning">« Vorige les</a>
-                <a href="#" class="btn btn-primary pull-right">Volgende les »</a>
+                <a href="<?= htmlspecialchars($meta->fetch('prev')) ?>" class="btn btn-warning">« Vorige les</a>
+                <a href="<?= htmlspecialchars($meta->fetch('next')) ?>" class="btn btn-primary pull-right">Volgende les »</a>
             </div>
         </div>
 
