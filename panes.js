@@ -19,6 +19,38 @@ $(function() {
         if (id && window.localStorage) window.localStorage.setItem('splitterpos-' + id, pos);
     }
 
+    /**
+     * We need an additional on-top invisible DIV to capture drag events
+     * on the iframes
+     */
+    var dragLayer = (function() {
+        var layer;
+
+        var create = function() {
+            if (layer) return;
+
+            layer = $('<div></div>').css({
+                position: 'absolute',
+                left: 0,
+                top: 0,
+                bottom: 0,
+                right: 0,
+                zIndex: 1000,
+                display: 'none'
+            }).appendTo(document.body);
+        }
+
+        return {
+            activate: function() {
+                create();
+                layer.css({ display: 'block' });
+            },
+            deactivate: function() {
+                if (layer) layer.css({ display: 'none' });
+            }
+        }
+    }());
+
     $('.h-split, .v-split').each(function(i, el) {
         var horizontal = $(el).hasClass('h-split');
 
@@ -83,13 +115,15 @@ $(function() {
             return false;
         };
 
-        var upHandler = function(ev) {
-            if (dragging) {
-                $(window).unbind('mousemove', moveHandler);
-                $(window).unbind('mouseup',   upHandler);
-            }
+        var upHandler = function() {
+            window.removeEventListener('mousemove', moveHandler, true);
+            window.removeEventListener('mouseup',   upHandler, true);
+
             dragging = false;
+
             savePosition(el, pos);
+            dragLayer.deactivate();
+
             return false;
         };
 
@@ -97,8 +131,11 @@ $(function() {
             dragging = true;
             ofs      = ev[evPosition] - pos;
 
-            $(window).bind('mousemove', moveHandler);
-            $(window).bind('mouseup',   upHandler);
+            window.addEventListener('mousemove', moveHandler, true);
+            window.addEventListener('mouseup',   upHandler, true);
+
+            dragLayer.activate();
+
             return false;
         });
 
