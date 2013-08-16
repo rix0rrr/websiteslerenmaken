@@ -3,7 +3,8 @@
 }}}
 
 Op deze site leren we je hoe je zelf een website moet _programmeren_, gewapend
-met niets anders dan een computer.
+met niets anders dan een computer. Let op: een website maken is best wel
+veel werk! 
 
 Misschien wil je dat wel helemaal niet, en daar is helemaal niets mis mee!
 Misschien wil jij wel alleen een website hebben voor je voetbalclub, voor je
