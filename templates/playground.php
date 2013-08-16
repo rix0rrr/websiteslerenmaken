@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="v-split" id="v-split-r">
-                <div class="top pane editor"><?= htmlspecialchars(implode("\n", $meta->get('initial_html'))) ?></div>
+                <div class="top pane editor"><?= $meta->get('initial_html') ? htmlspecialchars(implode("\n", $meta->get('initial_html'))) : "" ?></div>
                 <div class="bottom pane">
                     <iframe id="preview" class="preview-pane"></iframe>
                 </div>
@@ -44,6 +44,8 @@
                 <? if (has_prev($page_name)): ?>
                 <a href="../page.php/<?= htmlspecialchars(prev_page($page_name)) ?>" class="btn btn-warning">« Vorige les</a>
                 <? endif; ?>
+
+                <a href="#" class="btn btn-success" id="download-button" style="position: absolute; left: 50%; margin-left: -7em; width: 14em;">▼ Deze Pagina Downloaden</a>
 
                 <? if (has_next($page_name)): ?>
                 <a href="../page.php/<?= htmlspecialchars(next_page($page_name)) ?>" class="btn btn-primary pull-right">Volgende les »</a>

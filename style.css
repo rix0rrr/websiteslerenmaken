@@ -90,9 +90,10 @@ h1 a {
 
 .CodeMirror {
   height: auto;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 .CodeMirror-scroll {
   overflow-y: hidden;
   overflow-x: auto;
 }
-

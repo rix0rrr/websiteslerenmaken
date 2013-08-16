@@ -12,6 +12,8 @@ $(function() {
     $(window).resize(resizeVfills);
     resizeVfills();
 
+    var htmlCodeMirror;
+
     $('.editor').each(function(i, el) {
         var initial_content = $(el).text();
         $(el).text('');
@@ -27,5 +29,14 @@ $(function() {
 
         myCodeMirror.on('change', update);
         update();
+
+        htmlCodeMirror = myCodeMirror;
+    });
+
+    $('#download-button').click(function() {
+        var html = htmlCodeMirror.getValue();
+        $('#download-button')
+            .attr('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html))
+            .attr('download', 'mijn-pagina.html');
     });
 });
