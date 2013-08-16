@@ -1,9 +1,18 @@
----
-title: Hoe werkt deze site?
-template: playground
-prev: ../page.php/waarom
-next: ../page.php/tags-en-html-bestanden
----
+{{{
+    "title":    "Hoe werkt deze site?",
+    "template": "playground",
+    "initial_html": ["<html>",
+                     "  <head>",
+                     "  </head>",
+                     "  <body>",
+                     "",
+                     "      Hier kun je HTML typen, en je ziet",
+                     "      het resultaat meteen hieronder.",
+                     "      Probeer maar eens!",
+                     "",
+                     "  </body>",
+                     "</html>"]
+}}}
 
 Op deze site leren we je stap voor stap hoe je ingewikkelde webpagina's in
 elkaar zet. Soms zie je het icoontje van een gloeilamp zoals hieronder. Als

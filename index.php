@@ -1,3 +1,4 @@
+<? include "chapters.php" ?>
 <!doctype html>
 <html>
     <head>
@@ -44,15 +45,7 @@
                     <h2>Basis</h2>
 
                     <ol>
-                        <li><a href="page.php/hoe-werkt-deze-site">Hoe werkt deze site?</a></li>
-                        <li><a href="page.php/tags-en-html-bestanden">Tags en HTML bestanden</a></li>
-                        <li><a href="page.php/links">Links</a></li>
-                        <li><a href="page.php/plaatjes">Plaatjes</a></li>
-                        <li><a href="page.php/stijlen-en-kleuren-met-css">Stijlen en kleuren met CSS</a></li>
-                        <li><a href="page.php/layouts">Layouts</a></li>
-                        <li><a href="page.php/een-menubalk-maken">Een menubalk maken</a></li>
-                        <li><a href="page.php/meer-dan-een-pagina">Een site met meer dan één pagina</a></li>
-                        <li><a href="page.php/je-site-online-zetten">Je site online zetten</a></li>
+                        <?= render_links($basic) ?>
                     </ol>
 
                     <h2>Gevorderd</h2>

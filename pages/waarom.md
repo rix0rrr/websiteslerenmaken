@@ -1,6 +1,6 @@
----
-title: Waarom wil ik dit leren?
----
+{{{
+    "title": "Waarom wil ik dit leren?"
+}}}
 
 Op deze site leren we je hoe je zelf een website moet _programmeren_, gewapend
 met niets anders dan een computer.

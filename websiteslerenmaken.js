@@ -13,8 +13,10 @@ $(function() {
     resizeVfills();
 
     $('.editor').each(function(i, el) {
+        var initial_content = $(el).text();
+        $(el).text('');
         var myCodeMirror = CodeMirror(el, {
-            value: "<html>\n  <head>\n  </head>\n  <body>\n\n    Wat je hier typt verschijnt in het vak hieronder.\n\n  </body>\n</html>\n",
+            value: initial_content,
             mode:  "htmlmixed"
         });
 

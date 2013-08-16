@@ -1,5 +1,7 @@
 <?php
 
+include "chapters.php";
+
 function is_prefix($prefix, $string) {
     return substr($string, 0, strlen($prefix)) == $prefix;
 }
@@ -13,8 +15,9 @@ spl_autoload_register(function($class) {
 use \Michelf\MarkdownExtra;
 
 # Resolve file w.r.t. pages directory
-$pagesdir = realpath('pages');
-$filename = realpath($pagesdir . $_SERVER["PATH_INFO"] . '.md');
+$pagesdir  = realpath('pages');
+$page_name = basename($_SERVER["PATH_INFO"]);
+$filename  = realpath($pagesdir . '/' . $page_name . '.md');
 
 if (!is_file($filename) || !is_prefix($pagesdir, $filename)) {
     header("HTTP1/.0 404 Not Found");
@@ -23,14 +26,13 @@ if (!is_file($filename) || !is_prefix($pagesdir, $filename)) {
 }
 
 # Read file and pass content through the Markdown praser
-$meta = new FrontMatter($filename);
 $text = file_get_contents($filename);
-$html = MarkdownExtra::defaultTransform($meta->fetch('content'));
+$meta = new JsonFrontMatter($text);
+$meta->parse();
+$html = MarkdownExtra::defaultTransform($meta->content());
 
-$template = @$meta->fetch('template');
-if (!$template) $template = 'text';
-$title    = @$meta->fetch('title');
-if (!$title) $title = basename($filename);
+$template = $meta->get('template', 'text');
+$title    = $meta->get('title', basename($filename));
 
 include 'templates/' . $template . '.php';
 

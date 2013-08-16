@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="v-split" id="v-split-r">
-                <div class="top pane editor"></div>
+                <div class="top pane editor"><?= htmlspecialchars(implode("\n", $meta->get('initial_html'))) ?></div>
                 <div class="bottom pane">
                     <iframe id="preview" class="preview-pane"></iframe>
                 </div>
@@ -41,8 +41,13 @@
         </div>
         <div class="buttonbar" style="width: 100%; position: absolute; height: 50px; bottom: 0px;">
             <div class="buttonbar-inner">
-                <a href="<?= htmlspecialchars($meta->fetch('prev')) ?>" class="btn btn-warning">« Vorige les</a>
-                <a href="<?= htmlspecialchars($meta->fetch('next')) ?>" class="btn btn-primary pull-right">Volgende les »</a>
+                <? if (has_prev($page_name)): ?>
+                <a href="../page.php/<?= htmlspecialchars(prev_page($page_name)) ?>" class="btn btn-warning">« Vorige les</a>
+                <? endif; ?>
+
+                <? if (has_next($page_name)): ?>
+                <a href="../page.php/<?= htmlspecialchars(next_page($page_name)) ?>" class="btn btn-primary pull-right">Volgende les »</a>
+                <? endif; ?>
             </div>
         </div>
 
