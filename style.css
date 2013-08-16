@@ -89,7 +89,7 @@ h1 a {
 }
 
 .CodeMirror {
-  height: auto;
+    height: 100%;
   overflow-y: auto;
   overflow-x: auto;
 }
