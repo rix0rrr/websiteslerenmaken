@@ -58,15 +58,34 @@ kop, dus groot en lekker opvallend. De lijst gaat door tot `<h6>`.
 * `<b>` (*Bold*) maakt je tekst vet
 * `<i>` (*Italic*) maakt je test cursief
 * `<u>` (*Underline*) onderstreept je tekst
-* `<p>` (*Paragraph*) betekent dat de tekst ertussen een paragraaf. 
 
 +++
-Speciale karakters escapen &lt; enzo
+Omdat de tekens `<` en `>` gebruikt worden bij het typen van *tags* snap je wel
+dat als je echt een groter-dan of kleiner-dan teken wilt typen (zoals in:
+"ik ben > mijn leraar!") je iets anders moet typen. Iets extra's typen om
+karakters met een speciale betekenis normaal te laten verschijnen heet *escapen*,
+en in HTML doe je dat met *character entities*. Die schrijf je als volgt: `&entity;`.
+
+Zo kun je bijvoorbeeld `&copy;` typen voor ©, `&rarr;` voor →, en `&lt;` (*Less
+Than*) en `&gt;` (*Greater Than*) voor < en > . Helaas is hierdoor het &-teken
+ook weer speciaal geworden, dus als je dat wilt laten zien, typ je `&amp;`.
+
+Op Wikipedia vind je [een lijst van alle character
+entities](http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).
 +++
 
-Een webbrowser let niet op.
+Je hebt misschien ook al gemerkt dat een webbrowser niet op witruimte en
+regeleindes let. Al je tekst verschijnt achter elkaar op één lange regel,
+en pas aan de rechterkantlijn van het scherm begint de volgende regel. Je hebt daarom 
+een paar tags nodig om aan te geven dat de browser stukken tekst uit elkaar moet
+houden:
 
-+++
-Em vs i
-Strong vs b
-+++
+* `<p>` (*Paragraph*) betekent dat de tekst ertussen een paragraaf voorstelt.
+  Paragrafen hebben een extra regel witruimte ertussen.
+* `<br>` (*Line Break*) zorgt ervoor dat de regel waarop je aan het typen bent
+  afgebroken wordt een op een nieuwe regel begint.
+* `<hr>` (*Horizontal Rule*) zorgt voor een grote horizontale lijn op je pagina, 
+  om hoofdstukken van elkaar te scheiden!
+
+Probeer in het tekstveld rechts de verschillende tags maar eens uit, en kijk
+wat er gebeurt in het voorbeelscherm.

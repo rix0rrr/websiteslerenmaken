@@ -68,6 +68,20 @@
                     <ul>
                         <li><a href="http://devdocs.io/html/">devdocs.io</a>
                         Compleet overzicht van HTML tags en CSS attributen.</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+                        Mozilla CSS reference</a></li>
+                        <li><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">Mozilla
+                        JavaScript reference</a></li>
+                    </ul>
+
+                    <h2>Andere Sites</h2>
+
+                    <p>Hier zijn nog meer sites waar je iets van kan leren:</p>
+
+                    <ul>
+                        <li><a href="http://www.codecademy.com">Codecademy</a> Een Engelse
+                        site waar je HTML en JavaScript kan leren</li>
                     </ul>
                 </div>
             </div>
