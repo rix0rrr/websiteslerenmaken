@@ -42,8 +42,7 @@ hebben tekst in zich, en veranderen dan de betekenis van die tekst.
 Je zet de tag dan om je tekst heen, en zet een schuine streep `/` voor de
 naam om aan te geven dat het een sluittag is. Bijvoorbeeld `<i>zoals dit</i>`.
 
-Sommige tags hebben geen tekst in zich, zoals `<br>`, wat zorgt voor een *line
-BReak* op die plek.
+### Tags
 
 Hieronder vind je een lijstje van veelgebruikte tags. Probeer ze maar eens uit
 in het veld hiernaast en kijk wat er gebeurt met je webpagina (Let op dat alle
@@ -58,6 +57,8 @@ kop, dus groot en lekker opvallend. De lijst gaat door tot `<h6>`.
 * `<b>` (*Bold*) maakt je tekst vet
 * `<i>` (*Italic*) maakt je test cursief
 * `<u>` (*Underline*) onderstreept je tekst
+* `<title>` gebruik je tussen `<head>` en `</head>` om je pagina een titel te
+  geven (maar dat ga je in dit voorbeeld niet terugzien).
 
 +++
 Omdat de tekens `<` en `>` gebruikt worden bij het typen van *tags* snap je wel
@@ -74,6 +75,8 @@ Op Wikipedia vind je [een lijst van alle character
 entities](http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).
 +++
 
+### Witruimte
+
 Je hebt misschien ook al gemerkt dat een webbrowser niet op witruimte en
 regeleindes let. Al je tekst verschijnt achter elkaar op één lange regel,
 en pas aan de rechterkantlijn van het scherm begint de volgende regel. Je hebt daarom 
@@ -86,6 +89,8 @@ houden:
   afgebroken wordt een op een nieuwe regel begint.
 * `<hr>` (*Horizontal Rule*) zorgt voor een grote horizontale lijn op je pagina, 
   om hoofdstukken van elkaar te scheiden!
+
+(`<br>` en `<hr>` tags hoef je trouwens niet te sluiten!)
 
 Probeer in het tekstveld rechts de verschillende tags maar eens uit, en kijk
 wat er gebeurt in het voorbeelscherm.
