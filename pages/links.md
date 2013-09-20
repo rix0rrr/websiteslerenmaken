@@ -27,6 +27,10 @@ link klikken:
 
     <a href="http://www.djoe.nl">Klik hier om naar djoe.nl te gaan!</a>
 
+(Om de waarde van een attribuut horen altijd dubbele aanhalingstekens te staan.
+Een browser *snapt* het vaak ook wel als je die weglaat, maar ze horen er wel te
+staan. Probeer het goed te doen!)
+
 ++++
 De officiële naam van een webadres is URL. Dat staat voor *Uniform Resource
 Locator*, en is de manier om alle bestanden op het web aan te duiden. Een volledig URL
@@ -83,3 +87,12 @@ voor elke regel in de lijst:
     </ol>
 
 Probeer hiernaast maar eens een lijstje van links te maken!
+
+### Openen in een nieuw venster
+
+Iedere tag heeft kan attributen hebben, om zijn gedrag te veranderen. Hier vind
+je bijvoorbeeld [alle attributen van de a tag](http://devdocs.io/html/a).
+
+Een andere interessant attribuut van de `<a>` tag is `target="_blank"`. Hiermee
+kun je de gelinkte webpagina automatisch in een nieuwe pagina of tabblad laten
+openen.
