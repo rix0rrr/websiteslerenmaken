@@ -57,6 +57,7 @@ kop, dus groot en lekker opvallend. De lijst gaat door tot `<h6>`.
 * `<b>` (*Bold*) maakt je tekst vet
 * `<i>` (*Italic*) maakt je test cursief
 * `<u>` (*Underline*) onderstreept je tekst
+* `<center>` centreert je tekst
 * `<title>` gebruik je tussen `<head>` en `</head>` om je pagina een titel te
   geven (maar dat ga je in dit voorbeeld niet terugzien).
 
