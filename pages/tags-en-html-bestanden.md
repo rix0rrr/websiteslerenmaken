@@ -1,5 +1,5 @@
 {{{
-    "title":    "Tags en HTML bestanden",
+    "title":    "Tags en HTML-bestanden",
     "template": "playground",
     "initial_html": ["<html>",
                      "  <head>",
