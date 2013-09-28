@@ -82,6 +82,8 @@
                     <ul>
                         <li><a href="http://www.codecademy.com">Codecademy</a> Een Engelse
                         site waar je HTML en JavaScript kan leren</li>
+                        <li><a href="http://www.fullstack.io/choc/">Choc</a> Zie het resultaat
+                        van je wijzigingen <em>terwijl</em> je nog aan het programmeren bent!</a></li>
                     </ul>
                 </div>
             </div>
